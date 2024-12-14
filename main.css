@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    position: fixed; /* Keeps the nav fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure it spans the full width */
+    background-color: #000000; /* Optional: Set a background color */
+    z-index: 10; /* Ensure it stays above other elements */
+    padding: 1rem; /* Optional: Add padding for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+nav > a {
+    vertical-align: bottom;
+}
+
+nav img {
+    max-height: 48px;
+    background-color: white;
+}
+
+nav ul,
+nav ul li,
+.spacer {
+    display: inline-block;
+}
+
+.spacer {
+    /* Parent width - Logo width - Menu <ul> width */
+    width: calc(100% - 132px - 276px);
+}
+
+nav ul {
+    margin-bottom: 15px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+#last-item {
+    margin-right: 0px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(229, 145, 0);
+}
+
+nav ul li a:active {
+    color: rgb(92, 229, 0);
+}
+
+#current-page {
+    color: aquamarine;
+}
+body {
+    margin-top: 60px; /* Add margin to prevent content from overlapping the fixed nav */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Adjust the height to exclude the nav */
+    background-color: #2e39ff; /* Blue background */
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .form-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    height: 400px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"] {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  
+  .contact-form input[type="tel"] {
+    grid-column: 1 / -1; /* Full-width on the second row */
+  }
+  
+  .contact-form button {
+    padding: 0.8rem;
+    background-color: white;
+    color: #0047FF;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    grid-column: 1 / 2; /* Align with Name */
+    margin-top: 30px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e6e6e6;
+  }
+  footer {
+    background-color: black;
+    color: white;
+    margin: 1px;
+    padding: 35px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+text-align: center;
+clear:both;
+position: fixed;
+box-sizing: border-box;
+   }

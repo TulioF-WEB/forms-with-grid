@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <nav>
+        <a href="#">
+            <picture>
+                <!-- SVG version for all scenarios due to scalability and efficiency -->
+                <source srcset="./assets/logo/ECO_logo.svg" type="image/svg+xml" />
+                <!-- High resolution PNG for large screens -->
+                <source srcset="./assets/logo/ECO_logo_big.png" media="(min-width: 1024px)" type="image/png" />
+                <!-- Small PNG for medium screens -->
+                <source srcset="./assets/logo/ECO_logo_small.png" media="(min-width: 768px)" type="image/png" />
+                <!-- High resolution JPG for small screens (lower priority than PNG) -->
+                <source srcset="./assets/logo/ECO_logo_big.jpg" media="(min-width: 480px)" type="image/jpg" />
+                <!-- Fallback small JPG for all other scenarios or if none of the above are supported -->
+                <img src="./assets/logo/ECO_logo_small.jpg" alt="ECO company logo">
+            </picture>
+        </a>
+        <span class="spacer"></span>
+        <ul>
+            <li><a href="#" id="current-page">Home</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="./pages/services.html">Services</a></li>
+            <li id="last-item"><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="form-container">
+        <h1>Connect With Our Team</h1>
+        <p>Fill the form so that our team can reach out to you</p>
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="email" placeholder="Email">
+          <input type="tel" name="phone" placeholder="Phone Number">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+</div>
+<footer aria-label="Policies, about us and Frequently Asked Questions"></footeraria-label>
+    &copy; My Webpage |
+    <a href="https://treecanada.ca/privacy-policy/">Privacy Policy</a>
+    <a href="https://treecanada.ca/about-us/contact-us/">Who we are</a>
+    <a href="https://treecanada.ca/">Terms</a>
+    <a href="https://treecanada.ca/resources/trees-of-canada/">FAQ</a>
+</footer>
+</body>
+</html>
