@@ -1,0 +1,185 @@
+footer {
+    background-color: black;
+    color: white;
+    margin: 1px;
+    padding: 20px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+text-align: center;
+clear:both;
+position: fixed;
+box-sizing: border-box;
+   }
+   nav {
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #000000; 
+    z-index: 10; /* ensure it stays above other elements */
+    padding: 1rem; /*for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+nav > a {
+    vertical-align: bottom;
+}
+
+nav img {
+    max-height: 48px;
+    background-color: white;
+}
+
+nav ul,
+nav ul li,
+.spacer {
+    display: inline-block;
+}
+
+.spacer {
+    /* Parent width - Logo width - Menu <ul> width */
+    width: calc(100% - 132px - 276px);
+}
+
+nav ul {
+    margin-bottom: 15px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+#last-item {
+    margin-right: 0px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(229, 145, 0);
+}
+
+nav ul li a:active {
+    color: rgb(92, 229, 0);
+}
+
+#current-page {
+    color: aquamarine;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: #f4f4f9;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+  
+  .form-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+  }
+  
+  h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.2rem;
+        color: #000000; 
+        grid-column: span 2;
+        font-family: sans-serif;
+  }
+  
+  p {
+    color: #181818;
+    margin-bottom: 1.5rem;
+    grid-column: span 2;
+    font: bolder;
+    font-family: sans-serif;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.5rem;
+    grid-column: span 2;
+  }
+  
+  .form-field {
+    display: grid;
+    gap: 0.5rem;
+  }
+  
+  .message-field {
+    grid-column: 2; /* Place message field in the right column */
+    grid-row: 2 / span 2; /*span vertically */
+  }
+  
+  .phone-grid {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    
+  }
+  
+  label {
+    font-size: 0.9rem;
+    color: #353535;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  input, select, textarea {
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #e6f2ff;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+  }
+  
+  textarea {
+    resize: none;
+    min-height: 120px;
+  }
+  
+  .btn-container {
+    display: grid;
+    justify-self: end; /*button to the right */
+    align-self: center;
+    margin-top: 1.8rem;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  

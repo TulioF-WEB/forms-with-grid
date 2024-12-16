@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="secondary.css">
     <title>Services Page</title>
 </head>
 <body>
@@ -30,8 +30,53 @@
             <li id="last-item"><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
-    <header>
-        <h1 style="text-align: center;">Services Page</h1>
-    </header>
+    <div class="form-container">
+        <h1>Book your appointment now</h1>
+        <p>So our team can reach out to you on time</p>
+        <form>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" placeholder="eg: Jim Neutron">
+            </div>
+            <div class="form-field">
+              <label for="date">Available Date</label>
+              <select id="date">
+                <option value="" disabled selected>Select</option>
+                <option value="date1">First Date</option>
+                <option value="date2">Second Date</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="eg: mememe@email.com">
+            </div>
+            <div class="form-field message-field">
+              <label for="message">Share Your Message</label>
+              <textarea id="message" placeholder="Message"></textarea>
+            </div>
+            <div class="form-field phone-field">
+              <label for="phone">Phone Number</label>
+              <div class="phone-grid">
+                <select id="country-code">
+                  <option value="+971">+971</option>
+                  <option value="+1">+1</option>
+                </select>
+                <input type="text" id="phone" placeholder="92718321">
+              </div>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="btn">Book Now →</button>
+          </div>
+        </form>
+      </div>
+    <footer aria-label="Policies, about us and Frequently Asked Questions"></footeraria-label>
+        &copy; My Webpage |
+        <a href="https://treecanada.ca/privacy-policy/">Privacy Policy</a>
+        <a href="https://treecanada.ca/about-us/contact-us/">Who we are</a>
+        <a href="https://treecanada.ca/">Terms</a>
+        <a href="https://treecanada.ca/resources/trees-of-canada/">FAQ</a>
+    </footer>
 </body>
 </html>
