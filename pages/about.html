@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../main.css">
     <title>About Page</title>
+    <style>
+   input[type="text"], 
+  input[type="email"], 
+  textarea {
+      border: none; 
+      border-bottom: 2px solid blue; 
+      background-color: transparent; 
+      outline: none; 
+      padding: 10px 5px; 
+      font-size: 16px; 
+      color: #000; 
+      width: 100%; 
+      box-sizing: border-box; 
+  }
+  input::placeholder, 
+  textarea::placeholder {
+      color: #999; 
+      font-style: italic;
+  }
+  textarea {
+  resize: none;
+}
+
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
 </head>
 <body>
     <nav>
@@ -30,8 +58,47 @@
             <li id="last-item"><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
-    <header>
-        <h1 style="text-align: center;">About Page</h1>
-    </header>
+    <div id="contact-section">
+        <div id="contact-image">
+          <img src="https://images.unsplash.com/photo-1731369171457-a6422f3ff1dc?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagee">
+        </div>
+        <div id="contact-form">
+          <h1 id="contact-header">Contact Us</h1>
+          <form id="contact-form-grid">
+            <label for="contact-name"></label>
+            <input type="text" id="contact-name" name="name" placeholder="Full Name">
+    
+            <label for="contact-email"></label>
+            <input type="email" id="contact-email" name="email" placeholder="E-mail">
+    
+            <label for="contact-message"></label>
+            <textarea id="contact-message" name="message" placeholder="Message" rows="2"></textarea>
+    
+            <button type="submit" id="contact-submit-btn">Contact Us</button>
+          </form>
+          <div id="contact-info">
+            <p><strong>Contact</strong><br>hi@green.com</p>
+            <p><strong>Based in</strong><br>New York, California, Ohio</p>
+            <div id="contact-social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer aria-label="Policies, about us and Frequently Asked Questions"></footeraria-label>
+        &copy; My Webpage |
+        <a href="https://treecanada.ca/privacy-policy/">Privacy Policy</a>
+        <a href="https://treecanada.ca/about-us/contact-us/">Who we are</a>
+        <a href="https://treecanada.ca/">Terms</a>
+        <a href="https://treecanada.ca/resources/trees-of-canada/">FAQ</a>
+    </footer>
 </body>
 </html>
