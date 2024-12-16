@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
-    <title>Contact Page</title>
+    <link rel="stylesheet" href="secondary.css">
+    <title>Job Application</title>
 </head>
 <body>
     <nav>
@@ -30,8 +30,60 @@
             <li id="last-item"><a href="#" id="current-page">Contact</a></li>
         </ul>
     </nav>
-    <header>
-        <h1 style="text-align: center;">Contact Page</h1>
-    </header>
+    <div id="form-container">
+        <h2 id="form-title">Job Application ( Web )</h2>
+        <form id="job-form">
+          <div id="first-name-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="Enter First Name.......">
+          </div>
+          <div id="last-name-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Enter Last Name.......">
+          </div>
+          <div id="email-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email.......">
+          </div>
+          <div id="job-role-group">
+            <label for="job-role">Job Role</label>
+            <select id="job-role" style="background-color: white;">
+              <option value="backend">Backend Developer</option>
+              <option value="frontend">Frontend Developer</option>
+              <option value="fullstack">Full Stack Developer</option>
+            </select>
+          </div>
+          <div id="address-group">
+            <label for="address">Enter Address</label>
+            <textarea id="address" rows="4" placeholder="Enter Address"></textarea>
+          </div>
+          <div id="city-group">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="Enter City.">
+          </div>
+          <div id="pincode-group">
+            <label for="pincode">Zip Code</label>
+            <input type="text" id="pincode" placeholder="Enter Zipcode.">
+          </div>
+          <div id="start-date-group">
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date" value="2021-12-30">
+          </div>
+          <div id="cv-group">
+            <label for="cv">Upload Your CV</label>
+            <input type="file" id="cv">
+          </div>
+          <div id="submit-group">
+            <button type="submit" id="apply-btn">Apply Now</button>
+          </div>
+        </form>
+      </div>
+    <footer aria-label="Policies, about us and Frequently Asked Questions"></footeraria-label>
+        &copy; My Webpage |
+        <a href="https://treecanada.ca/privacy-policy/">Privacy Policy</a>
+        <a href="https://treecanada.ca/about-us/contact-us/">Who we are</a>
+        <a href="https://treecanada.ca/">Terms</a>
+        <a href="https://treecanada.ca/resources/trees-of-canada/">FAQ</a>
+    </footer>
 </body>
 </html>

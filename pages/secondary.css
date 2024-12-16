@@ -19,7 +19,7 @@ box-sizing: border-box;
     width: 100%; 
     background-color: #000000; 
     z-index: 10; /* ensure it stays above other elements */
-    padding: 1rem; /*for spacing */
+    padding: 0.6rem; /*for spacing */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
@@ -175,11 +175,78 @@ body {
     border: none;
     font-size: 1rem;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
   }
   
   .btn:hover {
     background-color: #0056b3;
   }
+  #form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
   
+  #form-title {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  #job-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  [id$="-group"] {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  [id$="-group"] label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  [id$="-group"] input,
+  [id$="-group"] textarea,
+  [id$="-group"] select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #address-group {
+    grid-column: span 2; /*address full-width */
+  }
+  
+  #submit-group {
+    grid-column: span 2; /*grid placement */
+    display: flex;
+  }
+  
+  #apply-btn {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 8px 15px; 
+    font-size: 0.9rem; 
+    border-radius: 4px;
+    justify-self: flex-end;
+    align-self: flex-end;
+    width: 20%;
+  }
+  
+  #apply-btn:hover {
+    background-color: #0055cc;
+  }
+  #job-form input[type="text"],
+#job-form input[type="email"],
+#job-form input[type="date"],
+#job-form input[type="file"],
+#job-form textarea {
+  background-color: white; 
+}
+
